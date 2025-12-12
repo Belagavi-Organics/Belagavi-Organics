@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Belagavi Organics</title>
+  <link rel="icon" type="image/png" href="images/logo.jpg">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- HEADER -->
+  <header class="site-header">
+  <div class="header-inner">
+    <div class="logo">
+      <a href="#home" class="logo-link">
+        <img src="images/logo.jpg" alt="Belagavi Organics logo">
+        <h1>Belagavi Organics</h1>
+      </a>
+    </div>
+
+    <button id="navToggle" class="nav-toggle" aria-label="Toggle navigation">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav class="main-nav" id="mainNav">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#offers">Offers</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <a href="catalog/catalog.pdf" class="download-btn" download>Download Catalog</a>
+    </nav>
+  </div>
+</header>
+
+
+  <!-- HERO SECTION -->
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <div class="tag">🌱 100% Certified Organic</div>
+      <h2>Pure Goodness from<br><span>Nature's Heart</span></h2>
+      <p>
+        We bring you the finest organic products, cultivated with love and
+        harvested at peak freshness. Experience the difference that
+        sustainable farming makes.
+      </p>
+      <div class="hero-buttons">
+        <button class="primary">Explore Products</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT SECTION -->
+  <section class="about" id="about">
+    <h4 class="section-subtitle">OUR STORY</h4>
+    <h2 class="section-title">Growing Organic Since 1985</h2>
+    <p class="about-text">
+      For nearly four decades, Belagavi Organics has been committed to sustainable farming practices.
+      We work directly with local farmers who share our passion for organic agriculture,
+      ensuring that every product meets the highest standards of quality and freshness.
+    </p>
+
+    <div class="features">
+      <div class="feature-card">
+        <div class="icon">
+          <img src="images/leaf-icon.png" alt="Organic Icon">
+        </div>
+        <h3>100% Organic</h3>
+        <p>All our products are certified organic, free from harmful chemicals and pesticides.</p>
+      </div>
+
+      <div class="feature-card">
+        <div class="icon">
+          <img src="images/heart-icon.png" alt="Heart Icon">
+        </div>
+        <h3>Farm Fresh</h3>
+        <p>Harvested at peak ripeness and delivered fresh to preserve natural nutrients.</p>
+      </div>
+
+      <div class="feature-card">
+        <div class="icon">
+          <img src="images/quality-icon.png" alt="Quality Icon">
+        </div>
+        <h3>Quality Certified</h3>
+        <p>Rigorous quality standards ensure you receive only the best products.</p>
+      </div>
+
+      <div class="feature-card">
+        <div class="icon">
+          <img src="images/delvary-icon.png" alt="Delivery Icon">
+        </div>
+        <h3>Fast Delivery</h3>
+        <p>Quick and reliable delivery to bring freshness right to your doorstep.</p>
+      </div>
+    </div>
+  </section>
+  
+<section class="story-banner">
+  <div class="story-banner-wrapper">
+    <img src="images/banner.jpg"
+         alt="Belagavi Organics – Sustainably Sown, Organically Grown">
+  </div>
+</section>
+
+  <!-- OFFER SECTION -->
+ <section id="offers" class="offer-section">
+  <div id="offers-container"></div>
+</section>
+
+
+
+  <!-- PRODUCTS SECTION -->
+  <section class="products" id="products">
+    <h4 class="section-subtitle">OUR PRODUCTS</h4>
+    <h2 class="section-title">Farm Fresh Organic Range</h2>
+    <p class="about-text">
+      Discover our complete range of certified organic products, carefully selected to bring you
+      the best nature has to offer.
+    </p>
+
+    <div class="product-grid">
+      <!-- Sweeteners -->
+      <div class="product-card" onclick="openCategory('Sweeteners.html')">
+        <div class="product-image">
+          <img src="images/sweeteners.png" alt="Sweetners">
+          <span class="category-tag">Sweetners</span>
+        </div>
+        <div class="product-info">
+          <h3>Sweetners</h3>
+          <p>-------------</p>
+        </div>
+      </div>
+
+      <!-- Dry Nuts -->
+      <div class="product-card" onclick="openCategory('Dry_Nuts.html')">
+        <div class="product-image">
+          <img src="images/Dry-Nuts.jpg" alt="Dry-nuts">
+          <span class="category-tag">Dry Nuts</span>
+        </div>
+        <div class="product-info">
+          <h3>Dry Nuts</h3>
+          <p>---------------</p>
+        </div>
+      </div>
+
+      <!-- Pulses and Dal -->
+      <div class="product-card" onclick="openCategory('Pulses-and-Dal.html')">
+        <div class="product-image">
+          <img src="images/Pulses-and-Dal.png" alt="Pulses-and-Dal">
+          <span class="category-tag">Pulses and Dal</span>
+        </div>
+        <div class="product-info">
+          <h3>Pulses and Dal</h3>
+          <p>-------------</p>
+        </div>
+      </div>
+
+      <!-- Rice -->
+      <div class="product-card" onclick="openCategory('Rice.html')">
+        <div class="product-image">
+          <img src="images/Rice.jpg" alt="Rice">
+          <span class="category-tag">Rice</span>
+        </div>
+        <div class="product-info">
+          <h3>Rice</h3>
+          <p>-------------</p>
+        </div>
+      </div>
+
+      <!-- Millets -->
+      <div class="product-card" onclick="openCategory('Millets.html')">
+        <div class="product-image">
+          <img src="images/Millets.webp" alt="Millets">
+          <span class="category-tag">Millets</span>
+        </div>
+        <div class="product-info">
+          <h3>Millets</h3>
+          <p>-------------</p>
+        </div>
+      </div>
+
+      <!-- Oils -->
+      <div class="product-card" onclick="openCategory('Oils.html')">
+        <div class="product-image">
+          <img src="images/Oils.jpg" alt="Oils">
+          <span class="category-tag">Oils</span>
+        </div>
+        <div class="product-info">
+          <h3>Oils</h3>
+          <p>-------------</p>
+        </div>
+      </div>
+
+      <!-- Spices -->
+      <div class="product-card" onclick="openCategory('Spices.html')">
+        <div class="product-image">
+          <img src="images/Spices.jpg" alt="Spices">
+          <span class="category-tag">Spices</span>
+        </div>
+        <div class="product-info">
+          <h3>Spices</h3>
+          <p>-------------</p>
+        </div>
+      </div>
+
+
+      <!-- Pickles -->
+     <div class="product-card" onclick="openCategory('Pickels.html')">
+    <div class="product-image">
+      <img src="images/pickels.jpg" alt="Pickels">
+      <span class="category-tag">Pickels</span>
+    </div>
+    <div class="product-info">
+      <h3>Pickels</h3>
+      <p>-------------</p>
+    </div>
+  </div>
+
+   <!-- Others -->
+     <div class="product-card" onclick="openCategory('Others.html')">
+    <div class="product-image">
+      <img src="images/other.jpg" alt="Others">
+      <span class="category-tag">Others</span>
+    </div>
+    <div class="product-info">
+      <h3>Others</h3>
+      <p>-------------</p>
+    </div>
+  </div>
+  
+    </div>
+
+
+
+    <div class="catalog-btn">
+      <a href="catalog/catalog.pdf" class="download-btn" download>Download Catalog</a>
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section id="contact" class="contact-section">
+    <div class="contact-header">
+      <p class="section-subtitle">GET IN TOUCH</p>
+      <h2 class="section-title">We'd Love to Hear From You</h2>
+      <p class="contact-desc">
+        Have questions about our products or want to place a bulk order? Reach out to us and
+        our friendly team will get back to you shortly.
+      </p>
+    </div>
+
+    <div class="contact-grid">
+
+      <div class="contact-card">
+        <div class="icon-box"><img src="images/location.png"></div>
+        <h3>Visit Us</h3>
+        <p>
+          IAT Building.<br>
+          Joint director of agriculture<br>
+          Premises, Near RTO circle,<br>
+          Shivaji Nagar, Belagavi - 590016
+        </p>
+      </div>
+
+      <div class="contact-card">
+        <div class="icon-box"><img src="images/phone.png"></div>
+        <h3>Call Us</h3>
+        <p>
+          Contact Person: Maruti Mellikeri<br>
+          Mobile: +91 8884063030
+        </p>
+      </div>
+
+      <div class="contact-card">
+        <div class="icon-box"><img src="images/mail.png"></div>
+        <h3>Email Us</h3>
+        <p>omfbelagavi@gmail.com</p>
+      </div>
+
+      <div class="contact-card">
+        <div class="icon-box"><img src="images/clock.png"></div>
+        <h3>Working Hours</h3>
+        <p>Mon – Fri: 8:00 AM – 6:00 PM<br>Sat: 9:00 AM – 4:00 PM<br>Sun: Closed</p>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="social-media" class="social-cards-section">
+
+    <!-- Instagram -->
+    <a href="https://instagram.com/YourInstagramID" target="_blank" class="social-card-link">
+      <div class="social-card">
+        <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram">
+        <h3>Instagram</h3>
+        <p>@YourInstagramID</p>
+      </div>
+    </a>
+
+    <!-- Facebook -->
+    <a href="https://facebook.com/YourFacebookPage" target="_blank" class="social-card-link">
+      <div class="social-card">
+        <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook">
+        <h3>Facebook</h3>
+        <p>Your Facebook Page</p>
+      </div>
+    </a>
+
+  </section>
+
+  <script src="script.js"></script>
+
+  <footer class="footer">
+    <div class="footer-left">
+      <img src="images/logo.jpg" alt="Logo" class="footer-logo">
+      <span class="footer-brand">Belagavi Organics</span>
+    </div>
+
+    <div class="footer-nav">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#products">Products</a>
+      <a href="#offers">Offers</a>
+      <a href="#contact">Contact</a>
+    </div>
+
+    <div class="footer-right">
+      © 2024 <span>Belagavi Organics</span>. All rights reserved.
+    </div>
+  </footer>
+
+  <script>
+  (function(){
+    const btn = document.getElementById('navToggle');
+    const nav = document.getElementById('mainNav');
+    btn && btn.addEventListener('click', () => {
+      nav.classList.toggle('open');
+      btn.classList.toggle('open');
+    });
+
+    /* close nav when clicking a link (mobile) */
+    nav && nav.addEventListener('click', (e) => {
+      if (e.target.tagName === 'A' && window.innerWidth < 880) {
+        nav.classList.remove('open');
+      }
+    });
+
+    /* close nav on resize to desktop */
+    window.addEventListener('resize', () => {
+      if (window.innerWidth >= 880) nav.classList.remove('open');
+    });
+  })();
+</script>
+
+</body>
+
+</html>
